@@ -1,0 +1,6 @@
+logID,lineID,month,date,time,level,component,pid,message,tid,template,values
+1,45,Jun,9,06:06:20,combo,rpc.statd,1605,Version 1.0.6 Starting,E114,Version <*>.<*>.<*> Starting,"['1', '0.6']"
+1,91,Jun,9,06:06:22,combo,hcid,1677,HCI daemon ver 2.4 started,E48,HCI daemon ver <*>.<*> started,['2.4']
+1,95,Jun,9,06:06:22,combo,sdpd,1681,sdpd v1.5 started,E95,sdpd v<*>.<*> started,['1.5']
+4,136,Jun,23,02:55:14,combo,sshd(pam_unix),19085,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=200.60.37.201,E16,authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=<*>,['200.60.37.201']
+4,137,Jun,23,04:05:28,combo,su(pam_unix),19534,session opened for user cyrus by (uid=0),E102,session opened for user <*> by (uid=<*>),"['cyrus', '0']"

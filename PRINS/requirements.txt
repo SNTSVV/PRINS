@@ -1,0 +1,6 @@
+natsort
+pandas
+numpy
+graphviz
+pysimpleautomata
+func-timeout

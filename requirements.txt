@@ -1,0 +1,9 @@
+natsort
+pandas
+numpy
+graphviz
+pysimpleautomata
+scikit-learn
+func-timeout
+matplotlib
+scipy

@@ -1,0 +1,29 @@
+types
+a var0:S
+b
+c
+d
+e
+trace
+a ok
+b
+trace
+a ok
+b
+a ok
+b
+trace
+a error
+c
+a error
+c
+a error
+c
+trace
+d
+d
+d
+trace
+e
+e
+e

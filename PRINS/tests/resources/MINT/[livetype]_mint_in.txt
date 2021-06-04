@@ -1,0 +1,1966 @@
+types
+26 var0:S
+59 var0:S
+84 var0:S
+159
+161
+162
+164 var0:S
+165
+166
+167 var0:S
+171
+181 var0:S
+182
+183 var0:S
+184 var0:S
+185
+186 var0:S
+187
+188
+190
+191
+192
+193 var0:S
+194
+235 var0:S
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2100
+__END__
+trace
+194
+__END__
+trace
+171
+59 1956
+171
+171
+59 1978
+171
+59 2208
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2236
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2237
+162
+162
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2651
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2402
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2516
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2399
+__END__
+trace
+194
+__END__
+trace
+190
+235 (longpoll:Requestinglongpollhostconfiguration.)
+26 (broadcast:running=TRUE,signedIn=FALSE,syncStatus=ON)
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2435
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2679
+__END__
+trace
+171
+171
+59 2256
+171
+59 2402
+188
+26 (broadcast:running=FALSE,signedIn=TRUE,syncStatus=ON)
+191
+26 (broadcast:running=TRUE,signedIn=FALSE,syncStatus=OFF)
+192
+__END__
+trace
+193 sync.out.broadcast.app.startedup
+193 cosy.fonts.UpdatePreferencesRequest
+193 cosy.fonts.GetConfigParamResponse
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>115
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>434
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>488
+__END__
+trace
+171
+171
+59 405
+171
+59 488
+171
+171
+59 861
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>726
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>780
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)100050'PlatformStatus.PlatformStatus.(NSPOSIXErrorDomain50)Networkisdown.Networkisdown.({_kCFStreamErrorCodeKey=50,_kCFStreamErrorDomainKey=1})'
+166
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>638
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>861
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)100050'PlatformStatus.PlatformStatus.(NSPOSIXErrorDomain50)Networkisdown.Networkisdown.({_kCFStreamErrorCodeKey=50,_kCFStreamErrorDomainKey=1})'
+166
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>243
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>297
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>218
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)100050'PlatformStatus.PlatformStatus.(NSPOSIXErrorDomain50)Networkisdown.Networkisdown.({_kCFStreamErrorCodeKey=50,_kCFStreamErrorDomainKey=1})'
+166
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>665
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+183 (id=longpoll)
+159
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>497
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>524
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(kCFErrorDomainCFNetwork2)HostUnknown.(null).({_kCFStreamErrorDomainKey=12,_kCFStreamErrorCodeKey=8,kCFGetAddrInfoFailureKey=8})'
+166
+162
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(kCFErrorDomainCFNetwork2)HostUnknown.(null).({_kCFStreamErrorDomainKey=12,_kCFStreamErrorCodeKey=8,kCFGetAddrInfoFailureKey=8})'
+166
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>974
+162
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1619
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1672
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1028
+__END__
+trace
+171
+171
+171
+59 1159
+171
+171
+171
+171
+59 1346
+171
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(NSPOSIXErrorDomain57)Socketisnotconnected.Socketisnotconnected.({_kCFStreamErrorCodeKey=57,_kCFStreamErrorDomainKey=1})'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1170
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(kCFErrorDomainCFNetwork2)HostUnknown.(null).({_kCFStreamErrorDomainKey=12,_kCFStreamErrorCodeKey=8,kCFGetAddrInfoFailureKey=8})'
+166
+162
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1293
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(kCFErrorDomainCFNetwork2)HostUnknown.(null).({_kCFStreamErrorDomainKey=12,_kCFStreamErrorCodeKey=8,kCFGetAddrInfoFailureKey=8})'
+166
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)32'NetworkError.NetworkError.(NSPOSIXErrorDomain57)Socketisnotconnected.Socketisnotconnected.({_kCFStreamErrorCodeKey=57,_kCFStreamErrorDomainKey=1})'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1307
+162
+162
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1538
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1645
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+__END__
+trace
+194
+__END__
+trace
+171
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1931
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2012
+__END__
+trace
+171
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2040
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2443
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2550
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2469
+__END__
+trace
+185
+185
+194
+__END__
+trace
+171
+171
+59 2207
+171
+59 2208
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2604
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3447
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3925
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3844
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3979
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3090
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3420
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2848
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2902
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2955
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2740
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3606
+162
+__END__
+trace
+171
+59 2614
+171
+171
+59 2630
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>3791
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4980
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5331
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4138
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4353
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5008
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4300
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4219
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4272
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4846
+__END__
+trace
+171
+59 4023
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4737
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4569
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4764
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4792
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5196
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5250
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>4462
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5934
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5665
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5800
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6156
+__END__
+trace
+171
+59 5448
+171
+59 6362
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5881
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6043
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6504
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>5531
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7203
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7231
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7176
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6982
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6604
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6766
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>6713
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7580
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7392
+__END__
+trace
+194
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7150
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7472
+__END__
+trace
+171
+59 6571
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7418
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7116
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7552
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7337
+__END__
+trace
+194
+__END__
+trace
+190
+235 (longpoll:Requestinglongpollhostconfiguration.)
+26 (broadcast:running=TRUE,signedIn=FALSE,syncStatus=ON)
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>306
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>8058
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7735
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7923
+__END__
+trace
+171
+188
+26 (broadcast:running=FALSE,signedIn=TRUE,syncStatus=ON)
+191
+26 (broadcast:running=TRUE,signedIn=FALSE,syncStatus=OFF)
+192
+171
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 sync.out.broadcast.app.shuttingdown
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>8084
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7654
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7707
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7762
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7815
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>8280
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>279
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>8307
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7950
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7681
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>7788
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>359
+__END__
+trace
+193 sync.out.broadcast.app.startedup
+193 cosy.fonts.UpdatePreferencesRequest
+193 cosy.fonts.GetConfigParamResponse
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>144
+162
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>575
+__END__
+trace
+185
+194
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1508
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1293
+__END__
+trace
+194
+__END__
+trace
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>605
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)29'Timeout.Timeout.RequestTimedOut.'
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>606
+182
+181 (id=longpoll)
+187
+165
+184 (id=longpoll)100050'PlatformStatus.PlatformStatus.(NSPOSIXErrorDomain50)Networkisdown.Networkisdown.({_kCFStreamErrorCodeKey=50,_kCFStreamErrorDomainKey=1})'
+166
+162
+162
+162
+__END__
+trace
+171
+59 612
+171
+59 620
+171
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>837
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>890
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>998
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>648
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1025
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1212
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>810
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+183 (id=longpoll)
+159
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1600
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1626
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>2003
+__END__
+trace
+182
+181 (id=longpoll)
+187
+165
+186 (id=longpoll){"Connection":"Close","Content-Length":"0"}
+164 (504).willretry
+161
+167 //polka.typekit.com/subscribe?adobe_id=067C2E205C53F83E0A495E3C%40AdobeID&entitlement_state=
+84 (id=longpoll)=>1895
+__END__
+trace
+171
+171
+59 1596
+__END__
+trace
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+193 cosy.fonts.FontsInfoRequest
+__END__

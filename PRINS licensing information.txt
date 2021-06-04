@@ -1,0 +1,17 @@
+PRINS is © 2021 University of Luxembourg
+and is distributed under the GPL v3 license (read COPYING for details)
+
+Authors:
+  - Donghwan Shin (donghwan.sin@uni.lu)
+  - Domenico Bianculli (domenico.bianculli@uni.lu)
+  - Lionel Briand (lionel.briand@uni.lu)
+
+Paper:
+  - "PRINS: Scalable Model Inference for Component-based System Logs", arXiv, 2021
+
+PRINS includes the following component:
+  - MINT (Copyright © 2013 Neil Walkinshaw, licensed under the GPL v3 license; read COPYING for details)
+
+PRINS includes as separate elements the following benchmarking datasets that are freely available for research purposes (and not under the GPLv3):
+  - Hadoop, HDFS, Linux, Spark, Zookeeper (from logpai, https://github.com/logpai/loghub)
+  - CoreSync, NGLClient, Oobelib, PDApp (produced by the authors)

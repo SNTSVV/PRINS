@@ -1,0 +1,8 @@
+logID,lineID,component,message,tid,values
+1,1,comp1,send x,E1,['x']
+1,2,comp2,ping,E2,[]
+1,3,comp1,send y,E1,['y']
+1,4,comp1,check,E3,[]
+2,1,comp1,send z,E1,['z']
+2,2,comp3,restart,E4,[]
+2,3,comp2,ping,E2,[]
