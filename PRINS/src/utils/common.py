@@ -1,8 +1,24 @@
 """
-Copyright 2021 University of Luxembourg
+This file is part of PRINS.
 
-% SPDX-FileCopyrightText: 2021 University of Luxembourg
-% SPDX-License-Identifier: GPL-3.0
+Copyright (C) 2021 University of Luxembourg
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+SPDX-FileType: SOURCE
+SPDX-FileCopyrightText: 2021 University of Luxembourg
+SPDX-License-Identifier: GPL-3.0-or-later
 """
 
 import os
@@ -206,12 +222,16 @@ def generate_map_from_tid_to_components(l_vectors: dict) -> dict:
 def common_arg_parser(systems, name: str = ''):
     # argument parsing
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', '--system', help="System name (default=none)", type=str, default=None)
+    parser.add_argument('-s', '--system', help="System name (default=None)", type=str, default=None)
     parser.add_argument('-n', '--num_logs', help="Number of logs (default=all)", type=int, default=None)
     parser.add_argument('--prins_only', help="Specify this to run PRINS only",
                         dest='prins_only', action='store_true', default=False)
     parser.add_argument('--mint_sys_only', help="Specify this to run MINT-SYS only",
                         dest='mint_sys_only', action='store_true', default=False)
+    parser.add_argument('-d', '--duplicate_range', help="Input log duplication factor range 'from,to' (default='1,1')",
+                        type=str, default='1,1')
+    parser.add_argument('-r', '--repetitions', help="Number of repetitions (default=1)",
+                        type=int, default=1)
     args = parser.parse_args()
 
     # specify target systems

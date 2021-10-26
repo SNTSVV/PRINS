@@ -84,8 +84,7 @@ class NFA:
         return None, None
 
     def slice(self, l_vector: list, slice_starting_states: dict) -> 'NFA':
-        """
-        Slice a model with respect to the given l_vector.
+        """Slice a model with respect to the given l_vector.
         NOTE: The slicing is deterministic because it is only performed on the models inferred by MINT.
         ASSERT: This function should not change anything in 'self'.
 
@@ -96,8 +95,6 @@ class NFA:
 
         logger.debug(f'slice(l_vector={l_vector})')
         logger.debug(f'initial_state_slice={slice_starting_states[self]}')
-
-        assert self.find_non_deterministic_states() is None
 
         # initialize
         sliced_nfa = {
@@ -386,8 +383,7 @@ class NFA:
             return False
 
     def find_non_deterministic_states(self, merge_count_per_state: dict = None, per_state_merge_limit: int = None):
-        """
-        Find a set of non-deterministic dst_states (NOTE: not necessarily starting from the initial state).
+        """Find a set of non-deterministic dst_states (NOTE: not necessarily starting from the initial state).
 
         :param merge_count_per_state: (only for hybrid det) state merge count per state
         :param per_state_merge_limit: (only for hybrid det) threshold for finding the target states of non-det

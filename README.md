@@ -9,7 +9,8 @@ This repository contains the replication package for the paper titled "[PRINS: S
 
 ## Prerequisite
 
-- python3 (python3.7 or higher is recommended)
+- Python 3 (python3.7 or higher is recommended)
+- Java runtime environment 1.8 (1.8.0_301 is tested)
 
 Please initialize python's virtual environment & install required packages:
 ```shell script
@@ -39,17 +40,23 @@ All 50 tests should pass.
 ## RQ1: Execution Time
 ```shell script
 (venv) PROMPT PRINS-expr % python run_model_inference.py -h
-usage: run_model_inference.py [-h] [--system SYSTEM] [-n NUM_LOGS]
-                              [--overwrite] [--prins_only] [--mint_sys_only]
+usage: run_model_inference.py [-h] [-s SYSTEM] [-n NUM_LOGS] [--prins_only]
+                              [--mint_sys_only] [-d DUPLICATE_RANGE]
+                              [-r REPETITIONS]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --system SYSTEM       System name (default=none)
+  -s SYSTEM, --system SYSTEM
+                        System name (default=None)
   -n NUM_LOGS, --num_logs NUM_LOGS
                         Number of logs (default=all)
-  --overwrite           overwrite existing preprocessed logs
   --prins_only          Specify this to run PRINS only
   --mint_sys_only       Specify this to run MINT-SYS only
+  -d DUPLICATE_RANGE, --duplicate_range DUPLICATE_RANGE
+                        Input log duplication factor range 'from,to'
+                        (default='1,1')
+  -r REPETITIONS, --repetitions REPETITIONS
+                        Number of repetitions (default=1)
 ```
 
 ## RQ2: Accuracy
@@ -75,12 +82,13 @@ Run the script (note that the experimental results must be provided in `/expr_ou
 python run_analyze_results.py
 ```
 
-The scripts will automaticaly generate the following files:
+The scripts will automatically generate the following files:
 - `rq1-boxplot.pdf`
 - `rq2-boxplot.pdf`
 - `rq3-boxplot.pdf`
-- `rq4-table.csv`
+- `rq4-line.csv`
 - `rq5-table.csv`
+- `rq5-table-size.csv`
 - `message_distribution.csv`
 
 

@@ -23,6 +23,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import os
 import time
+import pickle
 import concurrent
 import pandas as pd
 from copy import deepcopy
@@ -31,7 +32,6 @@ from src.automata.NFA import NFA
 from src.utils.common import convert_df_into_l_vectors
 from src.main.mint_helper import infer_model_by_mint
 from concurrent.futures.process import ProcessPoolExecutor
-from concurrent.futures.thread import ThreadPoolExecutor
 
 import logging
 logger = logging.getLogger(__name__)
@@ -70,49 +70,70 @@ class PRINS:
             self.l_vectors = convert_df_into_l_vectors(self.logs_df, include_component=True)
             self.components = natsorted(self.logs_df.component.unique())
 
-    def run(self, mint_timeout=3600, mint_param=2, ignore_values=False, save_pdf=True, num_workers=4):
-        """
-        Run PRINS (main algorithm).
+    def run(self, mint_timeout=3600, mint_param=2, ignore_values=False, save_pdf=True, num_workers=4, use_pickle=False):
+        """Run PRINS (main algorithm).
 
         :param mint_timeout: mint timeout (sec) (default=3600)
         :param mint_param: the parameter `k` of MINT (default=2)
         :param ignore_values: whether to ignore values in generating a model (default=False)
-        :param save_pdf: (optional) True if to save intermediate and final models as files
+        :param save_pdf: True if to save the final model as pdf (default=True)
         :param num_workers: the number of workers for parallel component model inference (default=2)
+        :param use_pickle: use pickle to save and load component models with logs (default=False)
         :return: DFA (system-level model)
         """
 
-        print(f'PRINS.run(save_files={save_pdf}, mint_timeout={mint_timeout}, ignore_values={ignore_values}, num_workers={num_workers})')
-        logger.info(f'PRINS.run(save_files={save_pdf}, mint_timeout={mint_timeout}, ignore_values={ignore_values}, num_workers={num_workers})')
+        print(f'PRINS.run(save_files={save_pdf}, mint_timeout={mint_timeout}, ignore_values={ignore_values}, '
+              f'num_workers={num_workers}, use_pickle={use_pickle})')
+        logger.info(f'PRINS.run(save_files={save_pdf}, mint_timeout={mint_timeout}, ignore_values={ignore_values}, '
+                    f'num_workers={num_workers}, use_pickle={use_pickle})')
 
-        # STEP1: Projection -------------------------------------------------------------------------------------------
-        print('STEP1: Projection ...')
-        logger.info('STEP1: Projection ...')
-        # project the system logs into individual component logs
-        projection_start = time.time()
-        component_logs = self.project()
-        projection_time = time.time() - projection_start
-        print(f'Projection done. [Time taken: {projection_time:.3f} sec]')
-        logger.info(f'Projection done. [Time taken: {projection_time:.3f} sec]')
+        # check if pickled data can be used for projection and (component-level model) inference
+        projection_time, inference_time, component_models = 0, 0, None
+        pickle_file = os.path.join(self.output_dir, 'logs_and_models.pickle')
+        if use_pickle and os.path.isfile(pickle_file):
+            # load pickled logs and component models
+            with open(pickle_file, 'rb') as f:
+                data = pickle.load(f)
+                if data['l_vectors'] == self.l_vectors:  # check if the pickled logs are consistent
+                    component_models = data['component_models']
+                    print('pickled data loaded; skip Projection and Inference')
 
-        # STEP2: Inference --------------------------------------------------------------------------------------------
-        print(f'STEP2: Inference (workers={num_workers}) ...')
-        logger.info(f'STEP2: Inference (workers={num_workers}) ...')
-        # infer each component-level model with process pool (multiprocessing)
-        inference_start = time.time()
-        component_models = {}
-        with ProcessPoolExecutor(max_workers=num_workers) as executor:
-            futures = {executor.submit(self.component_model_inference,
-                                       component, l_vectors, mint_timeout, mint_param, ignore_values)
-                       for component, l_vectors in component_logs.items()}
+        if not component_models:
+            # STEP1: Projection ----------------------------------------------------------------------------------------
+            print('STEP1: Projection ...')
+            logger.info('STEP1: Projection ...')
+            # project the system logs into individual component logs
+            projection_start = time.time()
+            component_logs = self.project()
+            projection_time = time.time() - projection_start
+            print(f'Projection done. [Time taken: {projection_time:.3f} sec]')
+            logger.info(f'Projection done. [Time taken: {projection_time:.3f} sec]')
 
-            for future in concurrent.futures.as_completed(futures):
-                if future.result():
-                    component, component_model = future.result()
-                    component_models[component] = component_model
-        inference_time = time.time() - inference_start
-        print(f'Inference done. [Time taken: {inference_time:.3f} sec]')
-        logger.info(f'Inference done. [Time taken: {inference_time:.3f} sec]')
+            # STEP2: Inference -----------------------------------------------------------------------------------------
+            print(f'STEP2: Inference (workers={num_workers}) ...')
+            logger.info(f'STEP2: Inference (workers={num_workers}) ...')
+            # infer each component-level model with process pool (multiprocessing)
+            inference_start = time.time()
+            component_models = {}
+            with ProcessPoolExecutor(max_workers=num_workers) as executor:
+                futures = {executor.submit(self.component_model_inference,
+                                           component, l_vectors, mint_timeout, mint_param, ignore_values)
+                           for component, l_vectors in component_logs.items()}
+
+                for future in concurrent.futures.as_completed(futures):
+                    if future.result():
+                        component, component_model = future.result()
+                        component_models[component] = component_model
+            inference_time = time.time() - inference_start
+            print(f'Inference done. [Time taken: {inference_time:.3f} sec]')
+            logger.info(f'Inference done. [Time taken: {inference_time:.3f} sec]')
+
+            if use_pickle:
+                # save logs and component models using pickle
+                with open(pickle_file, 'wb') as f:
+                    data = {'l_vectors': self.l_vectors, 'component_models': component_models}
+                    pickle.dump(data, f, pickle.HIGHEST_PROTOCOL)
+                    print('component models saved as pickled data')
 
         # STEP3: Stitching --------------------------------------------------------------------------------------------
         print('STEP3: Stitching ...')
@@ -130,25 +151,6 @@ class PRINS:
             model_appended, components = self.stitch(log_id, l_vector, component_models)
             all_components.append(components)
             appended_models.append(model_appended)
-
-        # # parallel stitch (for each execution log): Deactivated as it does not improve the speed much
-        # with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        #     futures = {
-        #         executor.submit(
-        #             self.stitch,
-        #             log_id,
-        #             l_vector,
-        #             component_models
-        #         ) for log_id, l_vector in self.l_vectors.items()
-        #     }
-        #     for future in concurrent.futures.as_completed(futures):
-        #         if future.result():
-        #             model_appended, components = future.result()
-        #             all_components.append(components)
-        #             appended_models.append(model_appended)
-        #
-        # # sanity check
-        # assert len(appended_models) == len(self.l_vectors.keys())
 
         # Merge appended_models using union and then convert it into DFA
         m_sys = NFA.union_nfa_models(appended_models, system=self.system)

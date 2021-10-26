@@ -37,4 +37,4 @@ settings = {
     },
 }
 
-STD_TIMEOUT = 1800
+STD_TIMEOUT = 36000

@@ -27,5 +27,5 @@ SYSTEMS = ['Hadoop', 'HDFS', 'Linux', 'Spark', 'Zookeeper', 'CoreSync', 'NGLClie
 MINT_PARAM = 2
 IGNORE_VALUES = False
 SAVE_PDF = False  # saving pdf is time consuming, especially for large models
-MINT_TIMEOUT = 3600  # sec
+MINT_TIMEOUT = 36000  # sec
 PRINS_NUM_WORKERS = 4  # multiprocessing

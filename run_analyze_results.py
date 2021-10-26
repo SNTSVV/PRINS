@@ -25,12 +25,16 @@ import math
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib import rc
 from natsort import natsorted
-from scipy.stats import median_abs_deviation, entropy
+from scipy.stats import entropy
 
 latex_figures = './'
 latex_data = './'
 SYSTEMS = ['Hadoop', 'HDFS', 'Linux', 'Zookeeper', 'CoreSync', 'NGLClient', 'Oobelib', 'PDApp']
+
+# activate latex text rendering
+rc('text', usetex=True)
 
 plt.style.use('bmh')
 plt.rcParams["font.family"] = "Times New Roman"
@@ -150,37 +154,49 @@ def rq3_line():
     fig.savefig(latex_figures + 'rq3-boxplot.pdf', dpi=300)
 
 
-def rq4_table(det: str = 'hybrid-1'):
-    file = 'expr_output/summary_model_inference.csv'
-    df = pd.read_csv(file)
-    grouped = df.groupby(by=['system', 'technique']).mean()
+def rq4_line(ncols=4):
+    file = 'expr_output/summary_model_inference_duplicated_logs.csv'
+    df = pd.read_csv(file, na_values=['timeout', 'crash'])
+    grouped = df.groupby(by=['system', 'technique', 'duplicated'])
 
-    summary = []
+    techniques = ['MINT-SYS', 'PRINS-w1', 'PRINS-w4']
+
+    nrows = math.ceil(len(SYSTEMS) / ncols)
+    fig, axs = plt.subplots(nrows=nrows, ncols=ncols, figsize=(10, 5))
+
     for system in SYSTEMS:
-        if system == 'Spark':
-            continue
+        i, j = divmod(SYSTEMS.index(system), ncols)
 
-        states_m = grouped.loc[system, 'MINT-SYS']['states']
-        states_p = grouped.loc[system, det]['states']
+        X = sorted(df.loc[df['system'] == system]['duplicated'].unique())
+        Y = {}
+        for technique in techniques:
+            Y[technique] = []
+            for x in X:
+                try:
+                    y = grouped.get_group((system, technique, x))['time_s'].mean()
+                except KeyError as e:
+                    print(f'KeyError: {e}')
+                    y = np.nan
+                if y is not np.nan and 'PRINS' in technique:
+                    y += grouped.get_group((system, 'hybrid-1', x))['time_s'].mean()
 
-        trans_m = grouped.loc[system, 'MINT-SYS']['transitions']
-        trans_p = grouped.loc[system, det]['transitions']
+                Y[technique].append(y)
 
-        time_m = grouped.loc[system, 'MINT-SYS']['time_s']
-        time_p = grouped.loc[system, 'PRINS-w4']['time_s'] + grouped.loc[system, det]['time_s']
+        axs[i][j].plot(X, Y['MINT-SYS'], label='MINT', marker='x', ls='-', c='r', linewidth=1)
+        axs[i][j].plot(X, Y['PRINS-w1'], label=r'\textit{PRINS-N}', marker='^', ls='-', c='b', linewidth=1)
+        axs[i][j].plot(X, Y['PRINS-w4'], label=r'\textit{PRINS-P}', marker='v', ls='-', c='g', linewidth=1)
 
-        summary.append((system,
-                        states_m, states_p, states_p/states_m,
-                        trans_m, trans_p, trans_p/trans_m,
-                        time_m, time_p, time_m/time_p))
+        axs[i][j].legend()
+        axs[i][j].set_title(system, size=14)
 
-    df = pd.DataFrame(summary, columns=['system',
-                                        'states_m', 'states_p', 'states_r',
-                                        'trans_m', 'trans_p', 'trans_r',
-                                        'time_m', 'time_p', 'su'])
-    df = df.set_index('system')
-    df.loc['Average'] = df.mean()
-    df.to_csv(latex_data + 'rq4-table.csv')
+        if j == 0:
+            axs[i][j].set_ylabel('Execution Time (s)', fontsize=13)
+        if i == nrows-1:
+            axs[i][j].set_xlabel('Duplication Factor', fontsize=13)
+
+    plt.tight_layout()
+    plt.show()
+    fig.savefig(latex_figures + 'rq4-line.pdf', dpi=300)
 
 
 def rq5_table(det: str = 'hybrid-1'):
@@ -210,8 +226,42 @@ def rq5_table(det: str = 'hybrid-1'):
                                         's_mint', 's_prins', 's_diff',
                                         'ba_mint', 'ba_prins', 'ba_diff'])
     df = df.set_index('system')
+
+    # load log confidence scores
+    df2 = pd.read_csv('dataset/dataset_summary.csv', index_col='system')
+    df = df.join(df2['log_confidence'])
+
+    # calculate average and save the resulting data frame
     df.loc['Average'] = df.mean()
-    df.to_csv(latex_data + 'rq5-table.csv')
+    df.round(9).to_csv(latex_data + 'rq5-table.csv')
+
+
+def rq5_model_size(det: str = 'hybrid-1'):
+    file = 'expr_output/summary_model_inference.csv'
+    df = pd.read_csv(file)
+    grouped = df.groupby(by=['system', 'technique']).mean()
+
+    summary = []
+    for system in SYSTEMS:
+        if system == 'Spark':
+            continue
+
+        states_m = grouped.loc[system, 'MINT-SYS']['states']
+        states_p = grouped.loc[system, det]['states']
+
+        trans_m = grouped.loc[system, 'MINT-SYS']['transitions']
+        trans_p = grouped.loc[system, det]['transitions']
+
+        summary.append((system,
+                        states_m, states_p, states_p/states_m,
+                        trans_m, trans_p, trans_p/trans_m))
+
+    df = pd.DataFrame(summary, columns=['system',
+                                        'states_m', 'states_p', 'states_r',
+                                        'trans_m', 'trans_p', 'trans_r'])
+    df = df.set_index('system')
+    df.loc['Average'] = df.mean()
+    df.round(9).to_csv(latex_data + 'rq5-model-size.csv')
 
 
 if __name__ == '__main__':
@@ -220,8 +270,11 @@ if __name__ == '__main__':
     # execution time
     rq1_boxplot(ncols=4)
     rq2_boxplot(ncols=4)
-    rq4_table('hybrid-1')
+    rq4_line(ncols=4)
 
     # accuracy
     rq3_line()
-    rq5_table('hybrid-1')
+    rq5_table()
+
+    # model size
+    rq5_model_size()

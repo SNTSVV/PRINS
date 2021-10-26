@@ -7,3 +7,4 @@ scikit-learn
 func-timeout
 matplotlib
 scipy
+tqdm
