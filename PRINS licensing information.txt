@@ -2,7 +2,7 @@ PRINS is © 2021 University of Luxembourg
 and is distributed under the GPL v3 license (read COPYING for details)
 
 Authors:
-  - Donghwan Shin (donghwan.sin@uni.lu)
+  - Donghwan Shin (donghwan.shin@uni.lu)
   - Domenico Bianculli (domenico.bianculli@uni.lu)
   - Lionel Briand (lionel.briand@uni.lu)
 
