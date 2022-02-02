@@ -1,6 +1,6 @@
 # PRINS: Scalable Model Inference for Component-based System Logs
 
-This repository contains the replication package for the paper titled "[PRINS: Scalable Model Inference for Component-based System Logs](http://arxiv.org/abs/2106.01987)" (arXiv, 2021).
+This repository contains the replication package for the paper titled "[PRINS: Scalable Model Inference for Component-based System Logs](http://arxiv.org/abs/2106.01987)", EMSE (to appear).
 
 ## Authors
 - Donghwan Shin (donghwan.shin@uni.lu)
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Dataset Check
 You can simply run the following script:
 ```shell script
-python check_dataset_summary.py
+(venv) python check_dataset_summary.py
 ```
 
 It will save the summary data in `dataset/dataset_summary.csv`.
@@ -31,13 +31,13 @@ It will save the summary data in `dataset/dataset_summary.csv`.
 You can run the unit tests:
 ```shell script
 cd PRINS
-python -m unittest
+(venv) python -m unittest
 ```
 
 All 50 tests should pass.
 
 
-## RQ1: Execution Time
+## Execution Time Evaluation (RQ1, RQ2, RQ4)
 ```shell script
 (venv) PROMPT PRINS-expr % python run_model_inference.py -h
 usage: run_model_inference.py [-h] [-s SYSTEM] [-n NUM_LOGS] [--prins_only]
@@ -59,7 +59,7 @@ optional arguments:
                         Number of repetitions (default=1)
 ```
 
-## RQ2: Accuracy
+## Accuracy Evaluation (RQ3, RQ5)
 ```shell script
 (venv) PROMPT PRINS-expr % python run_k_folds_cv.py -h
 usage: run_k_folds_cv.py [-h] [-k NUM_FOLDS] [-n NUM_LOGS] system technique
@@ -79,7 +79,7 @@ optional arguments:
 
 Run the script (note that the experimental results must be provided in `/expr_output`; by default, the results reported in the paper are given):
 ```shell script
-python run_analyze_results.py
+(venv) python run_analyze_results.py
 ```
 
 The scripts will automatically generate the following files:
