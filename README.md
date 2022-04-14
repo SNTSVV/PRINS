@@ -1,6 +1,7 @@
 # PRINS: Scalable Model Inference for Component-based System Logs
 
-This repository contains the replication package for the paper titled "[PRINS: Scalable Model Inference for Component-based System Logs](http://arxiv.org/abs/2106.01987)", EMSE (to appear).
+This repository contains the replication package for the paper titled "[PRINS: Scalable Model Inference for Component-based System Logs](https://doi.org/10.1007/s10664-021-10111-4)", EMSE (2022). Please use the following citation when you want to cite our work:
+> Shin, D., Bianculli, D. & Briand, L. PRINS: scalable model inference for component-based system logs. Empir Software Eng 27, 87 (2022). https://doi.org/10.1007/s10664-021-10111-4
 
 ## Authors
 - Donghwan Shin (donghwan.shin@uni.lu)
