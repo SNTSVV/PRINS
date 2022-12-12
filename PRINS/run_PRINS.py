@@ -58,8 +58,9 @@ if __name__ == '__main__':
     m_sys, _, _, _ = instance.run(mint_timeout=args.timeout,
                                   ignore_values=args.ignore_values,
                                   save_pdf=args.save_pdf,
+                                  det = args.det != 'none',
                                   num_workers=args.num_workers,
                                   use_pickle=args.use_pickle)
     if args.det != 'none':
-        PRINS.postprocess(m_sys, determinize_technique=args.det)
+        PRINS.postprocess(m_sys, determinize_technique=args.det, save_pdf=args.save_pdf, output_dir = os.path.join(args.output_dir, args.system))
     logger.info('run_PRINS ends without error(s).')
