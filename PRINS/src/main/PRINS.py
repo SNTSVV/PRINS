@@ -70,7 +70,7 @@ class PRINS:
             self.l_vectors = convert_df_into_l_vectors(self.logs_df, include_component=True)
             self.components = natsorted(self.logs_df.component.unique())
 
-    def run(self, mint_timeout=3600, mint_param=2, ignore_values=False, save_pdf=True, num_workers=4, use_pickle=False):
+    def run(self, mint_timeout=3600, mint_param=2, ignore_values=False, save_pdf=True, det = False, num_workers=4, use_pickle=False):
         """Run PRINS (main algorithm).
 
         :param mint_timeout: mint timeout (sec) (default=3600)
@@ -169,8 +169,8 @@ class PRINS:
         lc_div_score = len(set(all_components)) / len(all_components)
         print(f'lcDivScore: {lc_div_score:.3f}')
 
-        # (optional) Saving the Results as a pdf file
-        if save_pdf:
+        # (optional) Saving the Results as a pdf file if deterministic technique is not asked
+        if save_pdf and not det:
             if len(m_sys.states) < 1000:
                 m_sys.save_pdf(output_dir=self.output_dir)
             else:
@@ -253,7 +253,7 @@ class PRINS:
         return partitioned_log
 
     @staticmethod
-    def postprocess(m_sys: 'NFA', determinize_technique: str = 'hybrid-1'):
+    def postprocess(m_sys: 'NFA', determinize_technique: str = 'hybrid-1', save_pdf=True, output_dir = "/."):
         """
         Postprocessing function.
         Currently, we only convert NFA to DFA.
@@ -278,5 +278,12 @@ class PRINS:
 
         print(f'Post-processed model (m_sys): states={len(dfa_sys.states)}, transitions={len(dfa_sys.transitions)}')
         logger.info(f'Post-processed model (m_sys): states={len(dfa_sys.states)}, transitions={len(dfa_sys.transitions)}')
+
+        # (optional) Saving the Results as a pdf file
+        if save_pdf:
+            if len(dfa_sys.states) < 1000:
+                dfa_sys.save_pdf(output_dir)
+            else:
+                print(f'Do not save model.pdf because of too many states: {len(m_sys.states)}')
 
         return dfa_sys, time.time() - start_time
