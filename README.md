@@ -4,21 +4,42 @@ This repository contains the replication package for the paper titled "[PRINS: S
 > Shin, D., Bianculli, D. & Briand, L. PRINS: scalable model inference for component-based system logs. Empir Software Eng 27, 87 (2022). https://doi.org/10.1007/s10664-021-10111-4
 
 ## Authors
-- Donghwan Shin (donghwan.shin@uni.lu)
+- Donghwan Shin (d.shin@sheffield.ac.uk)
 - Domenico Bianculli (domenico.bianculli@uni.lu)
-- Lionel Briand (lionel.briand@uni.lu)
+- Lionel Briand (lbriand@uottawa.ca)
 
-## Prerequisite
 
-- Python 3 (python3.7 or higher is recommended)
-- Java runtime environment 1.8 (1.8.0_301 is tested)
+## Prerequisites
+* python 3.7+ (tested with 3.7 and 3.9)
+* graphviz 10+ (tested with 10.0.1)
+* JDK 8+ (for MINT, tested with openjdk 17.0.10)
 
-Please initialize python's virtual environment & install required packages:
+
+## Install
+
+Firstly, to render generated models in PDF, you must install `dot`. 
+Try the following command to check if `dot` is installed:
+```shell script
+dot -V
+```
+
+If `dot` is not installed, you can install it by following [this page](https://www.graphviz.org/download/).
+On Windows, you can follow the [installation procedure](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224).
+
+Second, initialize python's virtual environment & install required packages:
 ```shell script
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # venv should be activated during the execution of PRINS
 pip install -r requirements.txt
 ```
+
+Finally, you must have JDK to run MINT, which is used as a backend for PRINS. 
+Try the following command to check if JDK is installed:
+```shell script
+java -version
+```
+
+If JDK is not installed, you can install it by following [this page](https://openjdk.org/install/).
 
 ## Dataset Check
 You can simply run the following script:
