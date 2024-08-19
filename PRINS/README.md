@@ -3,28 +3,56 @@ PRoject-Inference-and-Stitch (PRINS); Scalable model inference for system logs
 
 
 ## Paper
-- Donghwan Shin, Domenico Bianculli, and Lionel Briand, "[PRINS: Scalable Model Inference for Component-based System Logs](http://arxiv.org/abs/2106.01987)", arXiv, 2021.
+> Shin, D., Bianculli, D. & Briand, L. PRINS: scalable model inference for component-based system logs. Empir Software Eng 27, 87 (2022). https://doi.org/10.1007/s10664-021-10111-4
+
 
 
 ## Authors
-- Donghwan Shin (donghwan.shin@uni.lu)
+- Donghwan Shin (d.shin@sheffield.ac.uk)
 - Domenico Bianculli (domenico.bianculli@uni.lu)
-- Lionel Briand (lionel.briand@uni.lu)
+- Lionel Briand (lbriand@uottawa.ca)
 
 
 ## Prerequisites
-* python 3.7
-* dot 2.x (graphviz)
+* python 3.7+ (tested with 3.7 and 3.9)
+* graphviz 10+ (tested with 10.0.1)
+* JDK 8+ (for MINT, tested with openjdk 17.0.10)
 
 
 ## Install
 
-Initialize python's virtual environment & install required packages:
+Firstly, to render generated models in PDF, you must install `dot`. 
+Try the following command to check if `dot` is installed:
+```shell script
+dot -V
+```
+
+If `dot` is not installed, you can install it by following [this page](https://www.graphviz.org/download/).
+On Windows, you can follow the [installation procedure](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224).
+
+Second, initialize python's virtual environment & install required packages:
 ```shell script
 python3 -m venv venv
 source venv/bin/activate  # venv should be activated during the execution of PRINS
 pip install -r requirements.txt
 ```
+
+Finally, you must have JDK to run MINT, which is used as a backend for PRINS. 
+Try the following command to check if JDK is installed:
+```shell script
+java -version
+```
+
+If JDK is not installed, you can install it by following [this page](https://openjdk.org/install/).
+
+
+## Test PRINS
+
+To check if PRINS is correctly installed, you can run the following command:
+```shell script
+python3 -m unittest discover -s tests
+```
+All 50 tests should pass without any error.
 
 
 ## Run PRINS
@@ -38,7 +66,7 @@ pip install -r requirements.txt
 * Output: a pdf file showing the system model (in the form of EFSM)
   * By default, PRINS keeps all the intermediate outputs for debugging
 * Command to run:
-  * `python run_PRINS.py Hadoop dataset_example/Hadoop/Hadoop_preprocessed_logs.csv`
+  * `python3 run_PRINS.py Hadoop dataset_example/Hadoop/Hadoop_preprocessed_logs.csv`
 
 
 ## Detailed Parameters
